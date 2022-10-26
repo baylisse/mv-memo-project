@@ -1,0 +1,48 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2551b0;
+}
+
+body {
+    background-image: url(images/IMG_4523.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #464646;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+table {
+    background-color: rgba(255,255,255,.55);
+    border-collapse: separate;
+    border-radius: 2%;
+    border-spacing: 10px;
+    box-shadow: 0 0 20px black;
+    font-weight: bold;
+    justify-content: center;
+    margin: auto;
+}
+
+#tablediv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+td {
+    border-radius: 2%;
+    padding: 7px;
+}
+
+thead {
+    font-size: 1.3em;
+    text-decoration: underline;
+}
