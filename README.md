@@ -10,6 +10,6 @@ Deployment on GitHub Pages [here](https://baylisse.github.io/mv-memo-project/)
 <br/>
 
 ## Technologies Used
- -HTML
- -CSS
- -Google Analytics
+ * HTML
+ * CSS
+ * Google Analytics
