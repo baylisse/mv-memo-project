@@ -8,15 +8,38 @@ a:hover {
 }
 
 body {
-    background-image: url(images/IMG_4523.jpg);
+    background-image: url(images/wk-nov-4-bcgrd.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     background-color: #464646;
-    font-family: 'Lora', serif;
+    color: black;
     text-align: center;
 }
+
+#headblock {
+    margin:auto;
+    background-color: rgba(255,255,255,.55);
+    border-radius: 10px;
+    box-shadow: 0 0 20px black;
+    width: 70%;
+}
+
+h1 {
+    color: black;
+    font-family: 'Lora', sans-serif; 
+    font-weight: bold;
+    padding-top: 2%;
+}
+
+h3 {
+    color: black;
+    font-family: 'Lora', sans-serif;
+    font-weight: bold; 
+    padding-bottom: 2%;
+}
+
 
 table {
     background-color: rgba(255,255,255,.55);
@@ -29,12 +52,12 @@ table {
     margin: auto;
 }
 
+.table-responsive {
+    border: none;
+}
+
 #tablediv {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 td {
@@ -42,7 +65,11 @@ td {
     padding: 7px;
 }
 
+th {
+    text-align: center;
+}
+
 thead {
-    font-size: 1.3em;
+    font-size: 1.3em; 
     text-decoration: underline;
 }
