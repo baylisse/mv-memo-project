@@ -16,14 +16,20 @@ body {
     background-color: #464646;
     color: black;
     text-align: center;
+    
 }
 
+
 #headblock {
-    margin:auto;
+    margin: auto;
     background-color: rgba(255,255,255,.55);
     border-radius: 10px;
     box-shadow: 0 0 20px black;
     width: 70%;
+}
+
+html {
+    height: 100%;
 }
 
 h1 {
@@ -54,11 +60,11 @@ table {
 
 .table-responsive {
     border: none;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 9%;
 }
 
-#tablediv {
-    margin: auto;
-}
 
 td {
     border-radius: 2%;
