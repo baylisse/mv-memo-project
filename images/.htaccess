@@ -1,1 +1,1 @@
-ExpiresByType image/png "access plus 10 minutes"
+ExpiresByType image/jpg "access plus 10 minutes"
