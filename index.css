@@ -7,33 +7,30 @@ a:hover {
     color: #2551b0;
 }
 
-body {
-    background-image: url(images/wk-nov-18-bkgd.jpg);
+/* body {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #464646;
+    background-color:black;
     color: black;
     text-align: center;
-    
-}
+} */
 
 
-#headblock {
-    margin-left: 10%;
-    margin-right: 70%;
+/* #headblock {
+    margin:auto;
     background-color: rgba(255,255,255,.5);
     border-radius: 10px;
     box-shadow: 0 0 20px black;
     width: 40%;
-}
+} */
 
 html {
     height: 100%;
 }
 
-h1 {
+/* h1 {
     color: black;
     font-family: 'Lora', sans-serif; 
     font-weight: bold;
@@ -45,11 +42,14 @@ h3 {
     font-family: 'Lora', sans-serif;
     font-weight: bold; 
     padding-bottom: 2%;
+} */
+
+.hidden {
+    display: none;
 }
 
-
 table {
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(255, 255, 255, .5);
     border-collapse: separate;
     border-radius: 2%;
     border-spacing: 10px;
@@ -57,11 +57,12 @@ table {
     font-weight: bold;
     justify-content: center;
     margin: auto;
+    width: 22%;
 }
 
 .table-responsive {
     border: none;
-    margin-left:auto;
+    margin-left: auto;
     margin-right: auto;
     margin-top: 9%;
 }
@@ -77,6 +78,137 @@ th {
 }
 
 thead {
-    font-size: 1.3em; 
+    font-size: 1.3em;
     text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.star {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: white;
+}
+
+/* Set the animation, color, size and hide the text */
+.intro {
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    z-index: 1;
+    animation: intro 6s ease-out 1s;
+    color: rgb(75, 213, 238);
+    font-weight: 400;
+    font-size: 300%;
+    opacity: 0;
+    pointer-events: none;
+}
+
+@keyframes intro {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.logo {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    z-index: 1;
+    margin: auto;
+    animation: logo 9s ease-out 9s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.logo svg {
+    width: inherit;
+}
+
+@keyframes logo {
+    0% {
+        width: 18em;
+        transform: scale(2.75);
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+        width: 18em;
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.1);
+        width: 18em;
+    }
+}
+
+p {
+    color: #FFFF82;
+}
+
+#board {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 100%;
+    text-align: justify;
+    position: absolute;
+    margin-left: -9em;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 350%;
+    height: 20em;
+    width: 18em;
+    bottom: 0;
+    left: 50%;
+    pointer-events: none;
+}
+
+#board:after {
+    position: absolute;
+    content: ' ';
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+    pointer-events: none;
+}
+
+#content {
+    animation: scroll 30s linear 16s;
+    position: absolute;
+    top: 100%;
+    pointer-events: none;
+}
+
+#title,
+#subtitle {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -80%;
+    }
 }
